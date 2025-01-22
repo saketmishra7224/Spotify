@@ -144,6 +144,21 @@ function artist(songName1) {
     else if (songName1 == "Tere Sang Yaara.mp3") {
         return "Atif Aslam";
     }
+    else if (songName1 == "Aye Ajnabi.mp3") {
+        return "A.R. Rahman";
+    }
+    else if (songName1 == "Khwaja Mere Khwaja.mp3") {
+        return "A.R. Rahman";
+    }
+    else if (songName1 == "Jashn-E-Bahaaraa.mp3") {
+        return "A.R. Rahman";
+    }
+    else if (songName1 == "Taal Se Taal Mila.mp3") {
+        return "A.R. Rahman";
+    }
+    else if (songName1 == "Tum Tak.mp3") {
+        return "A.R. Rahman";
+    }
 }
 
 const playMusic = (track, pause = false) => {
