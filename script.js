@@ -28,8 +28,6 @@ async function getsongs() {
         if(element.href.endsWith(".mp3")){
             songs.push(element.href.split("/songs/")[1])
         }
-        
-        
     }
     return songs
 }
