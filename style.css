@@ -117,8 +117,13 @@ body{
 .card{
     width: 180px;
     padding: 10px;
-    background-color: #0e0d0d;
+    background-color: #1f1e1e;
     position: relative;
+}
+
+.card:hover{
+    background-color: black;
+    cursor: pointer;
 }
 
 
