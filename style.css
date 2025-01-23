@@ -363,7 +363,7 @@ body{
 
     .footer{
         display:flex;
-        font-size: 10px;
+        font-size: 9px;
         color: grey;
         gap: 13px;
         bottom: 0;
@@ -381,8 +381,9 @@ body{
 
     .playbar{
         width: calc(100vw - 40px);
+        bottom: 50px;
         height: 60px;
-        font-size:medium;
+        font-size:10px;
     }
 
     .seekbar{
