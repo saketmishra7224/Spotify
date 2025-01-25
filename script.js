@@ -18,7 +18,7 @@ function secondsToMinutesSeconds(seconds) {
 
 async function getsongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://10.1.170.55:3001/${folder}/`)
+    let a = await fetch(`http://127.0.0.1:3000/${folder}/`)
     let response = await a.text();
     let div = document.createElement("div")
     div.innerHTML = response;
@@ -263,6 +263,14 @@ async function main() {
 
     //Load the playlist whenever card is clicked
     Array.from(document.getElementsByClassName("card")).forEach(e=>{
+        e.addEventListener("click", async item=>{
+            songs = await getsongs(`songs/${item.currentTarget.dataset.folder}`)
+            
+        })
+    })
+
+    //Load the playlist whenever albumcard is clicked
+    Array.from(document.getElementsByClassName("albumcard")).forEach(e=>{
         e.addEventListener("click", async item=>{
             songs = await getsongs(`songs/${item.currentTarget.dataset.folder}`)
             

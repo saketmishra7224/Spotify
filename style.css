@@ -165,6 +165,11 @@ body{
     position: relative;
 }
 
+.albumcard:hover{
+    background-color: rgb(43, 42, 42);
+    cursor: pointer;
+}
+
 .albumcard img{
     width: 93%;
     border-radius: 10px;
@@ -381,7 +386,7 @@ body{
 
     .playbar{
         width: calc(100vw - 40px);
-        bottom: 50px;
+        bottom: 0px;
         height: 60px;
         font-size:10px;
     }
